@@ -1,1 +1,1 @@
-In this repository I impemented all the OOPS concepts.
+In this repository I implemented all the OOPS concepts.
