@@ -28,10 +28,15 @@ int main(){
 
 //    Car obj;
 //    obj.gearchange();
-   Manual obj1;
-   obj1.gearchange();
-   Automatic obj2;
-   obj2.gearchange();
+//    Manual obj1;
+//    obj1.gearchange();
+    Car *obj = new Manual;
+    obj->gearchange();
+    Car *obj1 = new Automatic;
+    obj1
+    ->gearchange();
+//    Automatic obj2;
+//    obj2.gearchange();
 
 
     return 0;

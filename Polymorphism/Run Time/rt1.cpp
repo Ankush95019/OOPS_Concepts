@@ -7,9 +7,10 @@ using namespace std;
 class Car
 {
   public:
-    void gearChange(){
-      cout << "car class gearChange()\n";
-    }
+   virtual void gearChange() = 0;
+  //  void gearChange(){
+  //     cout << "car class gearChange()\n";
+  //   }
 };
 class Automatic : public Car
 {
@@ -27,11 +28,14 @@ class Manual : public Car
 };
 
 int main(){
+  
+  Car* ptr = new Automatic; // not possible to access overidden function due to without virtual keyword
+  ptr->gearChange();
 
-  Automatic a;
-  a.gearChange();
-  Manual m;
-  m.gearChange();
+  // Automatic a;
+  // a.gearChange();
+  // Manual m;
+  // m.gearChange();
 
   
   return 0;
